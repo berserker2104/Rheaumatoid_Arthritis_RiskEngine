@@ -107,7 +107,7 @@ def build_and_predict(prs_val):
     row=pd.DataFrame([{
         "PRS_std": prs_val,
         "age":age_scaled,
-        "sex":1 if sex=="Male" else 0,
+        "sex":1 if sex=="Female" else 0,
         "bmi":bmi_scaled,
         #"sex":1 if sex=="Male" else 0,
         "smoker":1 if smoker=="Yes" else 0,
